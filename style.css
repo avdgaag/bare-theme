@@ -6,3 +6,459 @@ Author:         [author]
 Version:        [version]
 Tags:           [tags]
 */
+/*
+ * Stylesheet for BareTheme
+ *
+ * DESCRIPTION
+ *
+ * This file serves up all the styles for the entire website, including
+ * styles for screen and print media types and browser-specific hacks.
+ *
+ * CREDITS
+ *
+ * Author: Arjan van der Gaag <arjan@arjanvandergaag.nl>
+ * Date: 6 dec 2010
+ *
+ * TABLE OF CONTENTS
+ *
+ * #001. Reset
+ * #002. Screen styles
+ *       #002.a Reset
+ *       #002.b Page layout
+ *       #002.c Headers
+ *       #002.d Generic typography
+ *       #002.e Lists
+ *       #002.f Tables
+ *       #002.g Forms
+ *       #002.h Images
+ *       #002.i Grids
+ * #003. Print syles
+ *       #002.a Page layout
+ *       #002.b Typography
+ *       #002.c Links
+ *       #002.d Images
+ * #004. Mobile devices styles
+ *       #004.a iPhone and other smartphones
+ *       #004.b iPad and similar devices
+ * #005. Browser-specific hacks
+ * #006. Vendor code
+ */
+
+
+/*
+ * #001: Reset
+ *
+ * Mostly by Eric Meyer. See:
+ *
+ * - http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+ * - http://html5doctor.com/html-5-reset-stylesheet/
+ * - http://www.aestheticallyloyal.com/public/optimize-legibility/
+ * - http://maxvoltar.com/archive/-webkit-font-smoothing
+ * - http://people.opera.com/patrickl/experiments/keyboard/test
+ * - http://www.pathf.com/blogs/2008/05/formatting-quoted-code-in-blog-posts-css21-white-space-pre-wrap/
+ * - http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+ *
+ * The reset styles do not just counter everything in the default browser
+ * stylesheet, but may also be used to define basic element styling across
+ * media.
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em,
+font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption,
+tbody, tfoot, thead, tr, th, td, b, u {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+p, table, fieldset, ol, ul, dl, pre, h1, h2, h3, h4, h5, h6, blockquote {
+    margin: 20px 0;
+}
+body {
+    line-height: 20px;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+    content: none;
+}
+blockquote, q {
+    quotes: none;
+}
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+del {
+    text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+    padding: 0;
+}
+input, select {
+    vertical-align: middle;
+}
+body, select, input, textarea {
+    color:#444;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+html {
+    overflow-y: scroll;
+}
+sub, sup {
+    font-size: smaller;
+    line-height: 0;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+}
+pre {
+    padding: 15px;
+    white-space: pre;       /* CSS2 */
+    white-space: pre-wrap;  /* CSS 2.1 */
+    white-space: pre-line;  /* CSS 3 (and 2.1 as well, actually) */
+    word-wrap: break-word;  /* IE */
+}
+pre, code, kbd, samp {
+    font-family: monospace, sans-serif;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+button {
+    width: auto;
+    overflow: visible;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/*
+ * #002: Screen styles
+ */
+@media screen {
+
+    /*
+     * #002.b: Page layout
+     */
+    .autoclear:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: " ";
+        clear: both;
+        height: 0;
+    }
+    .autoclear { display: inline-block; }
+    /* start commented backslash hack \*/
+    * html .autoclear { height: 1%; }
+    .autoclear { display: block; }
+    /* close commented backslash hack */
+
+    /*
+     * #002.c: Headers
+     */
+
+    /*
+     * #002.d: Generic typography
+     */
+
+    /*
+     * #002.e: Lists
+     */
+
+    /*
+     * #002.f: Tables
+     */
+
+    /*
+     * #002.g: Forms
+     */
+
+    /*
+     * #002.h: Images
+     */
+    div.photo.left, img.left {
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+    div.photo.right, img.right {
+        float: right;
+        margin: 0 0 20px 20px;
+    }
+    div.photo.full, img.full {
+        clear: both;
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    div.photo.bordered, img.bordered {
+        border: 1px solid #111;
+    }
+    div.photo p {
+        margin: 0;
+        font-size: 11px;
+        color: #999;
+    }
+
+    /*
+     * #002.i: Grids
+     */
+    .column {
+        float: left;
+        margin: 0 20px 0 0;
+    }
+    .last {
+        margin-right: 0;
+    }
+    .span1  { width:  40px; }
+    .span2  { width: 100px; }
+    .span3  { width: 160px; }
+    .span4  { width: 220px; }
+    .span5  { width: 280px; }
+    .span6  { width: 340px; }
+    .span7  { width: 400px; }
+    .span8  { width: 460px; }
+    .span9  { width: 520px; }
+    .span10 { width: 580px; }
+    .span11 { width: 640px; }
+    .span12 { width: 700px; }
+    .span13 { width: 760px; }
+    .span14 { width: 820px; }
+    .span15 { width: 880px; }
+    .span16 { width: 940px; margin-right: 0; }
+    .append1  { padding-right: 60px; }
+    .append2  { padding-right: 120px; }
+    .append3  { padding-right: 180px; }
+    .append4  { padding-right: 240px; }
+    .append5  { padding-right: 300px; }
+    .append6  { padding-right: 360px; }
+    .append7  { padding-right: 420px; }
+    .append8  { padding-right: 480px; }
+    .append9  { padding-right: 540px; }
+    .append10 { padding-right: 600px; }
+    .append11 { padding-right: 660px; }
+    .append12 { padding-right: 720px; }
+    .append13 { padding-right: 780px; }
+    .append14 { padding-right: 840px; }
+    .append15 { padding-right: 900px; }
+    .append16 { padding-right: 960px; }
+    .prepend1  { padding-left: 60px; }
+    .prepend2  { padding-left: 120px; }
+    .prepend3  { padding-left: 180px; }
+    .prepend4  { padding-left: 240px; }
+    .prepend5  { padding-left: 300px; }
+    .prepend6  { padding-left: 360px; }
+    .prepend7  { padding-left: 420px; }
+    .prepend8  { padding-left: 480px; }
+    .prepend9  { padding-left: 540px; }
+    .prepend10 { padding-left: 600px; }
+    .prepend11 { padding-left: 660px; }
+    .prepend12 { padding-left: 720px; }
+    .prepend13 { padding-left: 780px; }
+    .prepend14 { padding-left: 840px; }
+    .prepend15 { padding-left: 900px; }
+    .prepend16 { padding-left: 960px; }
+    .pull1, .pull2, .pull3, .pull4, .pull5, .pull6, .pull7, .pull8, .pull9,
+    .pull10, .pull11, .pull12, .pull13, .pull14, .pull15, .pull6 {
+        float: left;
+        position: relative;
+    }
+    .pull1 {  margin-left: -60px; }
+    .pull2 {  margin-left: -120px; }
+    .pull3 {  margin-left: -180px; }
+    .pull4 {  margin-left: -240px; }
+    .pull5 {  margin-left: -300px; }
+    .pull6 {  margin-left: -360px; }
+    .pull7 {  margin-left: -420px; }
+    .pull8 {  margin-left: -480px; }
+    .pull9 {  margin-left: -540px; }
+    .pull10 { margin-left: -600px; }
+    .pull11 { margin-left: -660px; }
+    .pull12 { margin-left: -720px; }
+    .pull13 { margin-left: -780px; }
+    .pull14 { margin-left: -840px; }
+    .pull15 { margin-left: -900px; }
+    .pull16 { margin-left: -960px; }
+    .push1, .push2, .push3, .push4, .push5, .push6, .push7, .push8, .push9,
+    .push10, .push11, .push12, .push13, .push14, .push15, .push6 {
+        float: right;
+        position: relative;
+    }
+    .push1 {  margin: 0 -60px 0 60px; }
+    .push2 {  margin: 0 -120px 0 120px; }
+    .push3 {  margin: 0 -180px 0 180px; }
+    .push4 {  margin: 0 -240px 0 240px; }
+    .push5 {  margin: 0 -300px 0 300px; }
+    .push6 {  margin: 0 -360px 0 360px; }
+    .push7 {  margin: 0 -420px 0 420px; }
+    .push8 {  margin: 0 -480px 0 480px; }
+    .push9 {  margin: 0 -540px 0 540px; }
+    .push10 { margin: 0 -600px 0 600px; }
+    .push11 { margin: 0 -660px 0 660px; }
+    .push12 { margin: 0 -720px 0 720px; }
+    .push13 { margin: 0 -780px 0 780px; }
+    .push14 { margin: 0 -840px 0 840px; }
+    .push15 { margin: 0 -900px 0 900px; }
+    .push16 { margin: 0 -960px 0 960px; }
+}
+
+/*
+ * #003: Print styles
+ */
+@media print {
+    /*
+     * #002.a: Page layout
+     */
+    #nav,
+    form,
+    #global_navigation,
+    #sidebar {
+        display: none;
+    }
+
+    /*
+     * #002.b: Typography
+     */
+    body {
+        font: 12pt/16pt Cambria, Georgia, Times, Times New Roman, serif;
+        color: #333;
+    }
+    p, table, fieldset, ol, ul, dl, pre, h1, h2, h3, h4, h5, h6, blockquote {
+        margin: 16pt 0;
+    }
+    pre, blockquote, img {
+        page-break-inside: avoid;
+    }
+    p, h2, h3, h4, h5, h6 {
+        orphans: 3;
+        widows: 3;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    /*
+     * #002.c: Links
+     */
+    a:link, a:visited {
+        color: #333;
+        text-decoration: none;
+    }
+    #content a:link, #content a:visited {
+        border-bottom: 1px dotted #333;
+    }
+
+    /*
+     * #002.d: Images
+     */
+    img.left {
+        float: left;
+        margin: 16pt;
+    }
+    img.right {
+        float: right;
+        margin: 16pt;
+    }
+    img.full {
+        margin: 16pt auto;
+        text-align: center;
+        display: block;
+    }
+}
+
+/*
+ * #004: Mobile devices styles
+ *
+ * These media queries apply to both portrait and landscape. To limit styles to just one
+ * orientation, create a new section and apply the following media query:
+ *
+ *   ... and (orientation: [landscape|portrait])
+ *
+ */
+
+/*
+ * #004.a iPhone and other smartphones
+ */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+}
+
+/*
+ * #004.b iPad and similar devices
+ */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+}
+
+/*
+ * #005: Browser-specific hacks
+ *
+ * The following rules are meant to fix cross-browser compatibility issues.
+ *
+ * Conditional comments have applied some special classes to the HTML element,
+ * such as .ie6, .ie7, .ie8 and .ie9.
+ */
+.lte7 input[type="checkbox"] {
+ vertical-align: baseline;
+}
+.ie6 input {
+ vertical-align: text-bottom;
+}
+
+/*
+ * #006: Vendor code
+ *
+ * Insert code from other libraries or plugins below.
+ */
