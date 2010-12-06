@@ -1,0 +1,12 @@
+.DS_Store
+*.tmp
+*.swp
+*.swo
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Desktop.ini
+.*.sw[a-z]
+*.un~
