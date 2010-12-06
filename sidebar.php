@@ -7,3 +7,6 @@
  * @since BareTheme 1.0
  */
 ?>
+<aside id="sidebar" role="complementary">
+    <?php dynamic_sidebar('sidebar'); ?>
+</aside>
