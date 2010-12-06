@@ -9,11 +9,7 @@
 get_header();
 ?>
 
-<?php if(have_posts()): ?>
-
-    <?php while(have_posts()): the_post(); include('partials/archived_post.php'); endwhile; ?>
-
-<?php endif; ?>
+<?php get_template_part('loop', 'search') ?>
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
